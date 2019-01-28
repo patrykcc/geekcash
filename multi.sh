@@ -74,7 +74,7 @@ unzip bootstrap.zip -d /home/geekcash3/.geekcash
 unzip bootstrap.zip -d /home/geekcash4/.geekcash
 rm bootstrap.zip
 echo -e "${GREEN}Configuring Wallet for first node${NC}"
-sudo mkdir /home/geekcash/.geekcash
+#sudo mkdir /home/geekcash/.geekcash
 sudo touch /home/geekcash/.geekcash/geekcash.conf
 echo "rpcuser=user"`shuf -i 100000-10000000 -n 1` >> /home/geekcash/.geekcash/geekcash.conf
 echo "rpcpassword=pass"`shuf -i 100000-10000000 -n 1` >> /home/geekcash/.geekcash/geekcash.conf
@@ -89,7 +89,7 @@ echo "externalip=$(hostname  -I | cut -f1 -d' '):6889" >> /home/geekcash/.geekca
 echo "masternodeprivkey=$privkey" >> /home/geekcash/.geekcash/geekcash.conf
 sleep 5
 echo -e "${GREEN}Configuring Wallet for second node${NC}"
-sudo mkdir /home/geekcash2/.geekcash
+#sudo mkdir /home/geekcash2/.geekcash
 sudo touch /home/geekcash2/.geekcash/geekcash.conf
 echo "rpcuser=user"`shuf -i 100000-10000000 -n 1` >> /home/geekcash2/.geekcash/geekcash.conf
 echo "rpcpassword=pass"`shuf -i 100000-10000000 -n 1` >> /home/geekcash2/.geekcash/geekcash.conf
@@ -104,7 +104,7 @@ echo "externalip=$(hostname  -I | cut -f1 -d' '):6889" >> /home/geekcash2/.geekc
 echo "masternodeprivkey=$privkey2" >> /home/geekcash2/.geekcash/geekcash.conf
 sleep 5 
 echo -e "${GREEN}Configuring Wallet for third node${NC}"
-sudo mkdir /home/geekcash3/.geekcash
+#sudo mkdir /home/geekcash3/.geekcash
 sudo touch /home/geekcash3/.geekcash/geekcash.conf
 echo "rpcuser=user"`shuf -i 100000-10000000 -n 1` >> /home/geekcash3/.geekcash/geekcash.conf
 echo "rpcpassword=pass"`shuf -i 100000-10000000 -n 1` >> /home/geekcash3/.geekcash/geekcash.conf
@@ -119,7 +119,7 @@ echo "externalip=$(hostname  -I | cut -f1 -d' '):6889" >> /home/geekcash3/.geekc
 echo "masternodeprivkey=$privkey3" >> /home/geekcash3/.geekcash/geekcash.conf
 sleep 5 
 echo -e "${GREEN}Configuring Wallet for 4th node${NC}"
-sudo mkdir /home/geekcash4/.geekcash
+#sudo mkdir /home/geekcash4/.geekcash
 sudo touch /home/geekcash4/.geekcash/geekcash.conf
 echo "rpcuser=user"`shuf -i 100000-10000000 -n 1` >> /home/geekcash4/.geekcash/geekcash.conf
 echo "rpcpassword=pass"`shuf -i 100000-10000000 -n 1` >> /home/geekcash4/.geekcash/geekcash.conf
