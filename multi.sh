@@ -66,9 +66,16 @@ wget https://github.com/GeekCash/geekcash/releases/download/v1.2.0.1/geekcash-1.
 tar -xzvf geekcash-1.2.0-x86_64-linux-gnu.tar.gz
 sudo mv /root/geekcash/geekcash-1.2.0/bin/geekcashd /root/geekcash/geekcash-1.2.0/bin/geekcash-cli /root/geekcash/geekcash-1.2.0/bin/geekcash-tx /usr/local/bin
 sudo chmod 755 -R  /usr/local/bin/geekcash*
+echo -e "${GREEN}Updating blockchain to pass 300001 block${NC}"
+wget https://github.com/GeekCash/geekcash/releases/download/v1.2.0.1/bootstrap.zip
+unzip bootstrap.zip -d /home/geekcash/.geekcash
+unzip bootstrap.zip -d /home/geekcash2/.geekcash
+unzip bootstrap.zip -d /home/geekcash3/.geekcash
+unzip bootstrap.zip -d /home/geekcash4/.geekcash
+rm bootstrap.zip
+echo -e "${GREEN}Configuring Wallet for first node${NC}"
 sudo mkdir /home/geekcash/.geekcash
 sudo touch /home/geekcash/.geekcash/geekcash.conf
-echo -e "${GREEN}Configuring Wallet for first node${NC}"
 echo "rpcuser=user"`shuf -i 100000-10000000 -n 1` >> /home/geekcash/.geekcash/geekcash.conf
 echo "rpcpassword=pass"`shuf -i 100000-10000000 -n 1` >> /home/geekcash/.geekcash/geekcash.conf
 echo "rpcallowip=127.0.0.1" >> /home/geekcash/.geekcash/geekcash.conf
