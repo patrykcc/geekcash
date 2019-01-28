@@ -64,7 +64,7 @@ sudo mkdir /root/geekcash
 cd /root/geekcash
 wget https://github.com/GeekCash/geekcash/releases/download/v1.2.0.1/geekcash-1.2.0-x86_64-linux-gnu.tar.gz
 tar -xzvf geekcash-1.2.0-x86_64-linux-gnu.tar.gz
-sudo mv /root/geekcash-1.2.0/bin/geekcashd /root/geekcash-1.2.0/bin/geekcash-cli /root/geekcash-1.2.0/bin/geekcash-tx /usr/local/bin
+sudo mv /root/geekcash/geekcash-1.2.0/bin/geekcashd /root/geekcash/geekcash-1.2.0/bin/geekcash-cli /root/geekcash/geekcash-1.2.0/bin/geekcash-tx /usr/local/bin
 sudo chmod 755 -R  /usr/local/bin/geekcash*
 sudo mkdir /home/geekcash/.geekcash
 sudo touch /home/geekcash/.geekcash/geekcash.conf
