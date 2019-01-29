@@ -160,3 +160,4 @@ echo -e ${GREEN}"Last node is fully synced. You fourth masternode is running!"${
 echo ""
 echo -e ${GREEN}"Congrats! Your GEEKCash Masternodes are now installed and started. Please wait from 10-20 minutes in order to give the masternode enough time to sync, then start the node from your wallet, Debug console option"${NC}
 echo "The END. You can close now the SSH terminal session";
+echo "If you found this helpful, please donate GEEK to GWVbcBCegfTgJr4iAMQBFLqByrWCTEaY8f"
