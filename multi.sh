@@ -101,7 +101,7 @@ echo "maxconnections=250" >> /home/geekcash2/.geekcash/geekcash.conf
 echo "masternode=1" >> /home/geekcash2/.geekcash/geekcash.conf
 echo "rpcport=68910" >> /home/geekcash2/.geekcash/geekcash.conf
 echo "listen=1" >> /home/geekcash2/.geekcash/geekcash.conf
-echo "port=6891" >> /home/geekcash/.geekcash/geekcash.conf
+echo "port=6891" >> /home/geekcash2/.geekcash/geekcash.conf
 echo "externalip=$(hostname  -I | cut -f1 -d' '):6889" >> /home/geekcash2/.geekcash/geekcash.conf
 echo "masternodeprivkey=$privkey2" >> /home/geekcash2/.geekcash/geekcash.conf
 sleep 5 
@@ -117,7 +117,7 @@ echo "maxconnections=250" >> /home/geekcash3/.geekcash/geekcash.conf
 echo "masternode=1" >> /home/geekcash3/.geekcash/geekcash.conf
 echo "rpcport=68920" >> /home/geekcash3/.geekcash/geekcash.conf
 echo "listen=1" >> /home/geekcash3/.geekcash/geekcash.conf
-echo "port=6892" >> /home/geekcash/.geekcash/geekcash.conf
+echo "port=6892" >> /home/geekcash3/.geekcash/geekcash.conf
 echo "externalip=$(hostname  -I | cut -f1 -d' '):6889" >> /home/geekcash3/.geekcash/geekcash.conf
 echo "masternodeprivkey=$privkey3" >> /home/geekcash3/.geekcash/geekcash.conf
 sleep 5 
@@ -133,7 +133,7 @@ echo "maxconnections=250" >> /home/geekcash4/.geekcash/geekcash.conf
 echo "masternode=1" >> /home/geekcash4/.geekcash/geekcash.conf
 echo "rpcport=68930" >> /home/geekcash4/.geekcash/geekcash.conf
 echo "listen=1" >> /home/geekcash4/.geekcash/geekcash.conf
-echo "port=6893" >> /home/geekcash/.geekcash/geekcash.conf
+echo "port=6893" >> /home/geekcash4/.geekcash/geekcash.conf
 echo "externalip=$(hostname  -I | cut -f1 -d' '):6889" >> /home/geekcash4/.geekcash/geekcash.conf
 echo "masternodeprivkey=$privkey4" >> /home/geekcash4/.geekcash/geekcash.conf
 sleep 5 
