@@ -85,7 +85,6 @@ echo "maxconnections=250" >> /home/geekcash/.geekcash/geekcash.conf
 echo "masternode=1" >> /home/geekcash/.geekcash/geekcash.conf
 echo "rpcport=68900" >> /home/geekcash/.geekcash/geekcash.conf
 echo "listen=1" >> /home/geekcash/.geekcash/geekcash.conf
-echo "port=6890" >> /home/geekcash/.geekcash/geekcash.conf
 echo "externalip=$(hostname  -I | cut -f1 -d' '):6889" >> /home/geekcash/.geekcash/geekcash.conf
 echo "masternodeprivkey=$privkey" >> /home/geekcash/.geekcash/geekcash.conf
 sleep 5
