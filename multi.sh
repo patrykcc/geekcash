@@ -83,8 +83,9 @@ echo "server=1" >> /home/geekcash/.geekcash/geekcash.conf
 echo "daemon=1" >> /home/geekcash/.geekcash/geekcash.conf
 echo "maxconnections=250" >> /home/geekcash/.geekcash/geekcash.conf
 echo "masternode=1" >> /home/geekcash/.geekcash/geekcash.conf
-echo "rpcport=6890" >> /home/geekcash/.geekcash/geekcash.conf
-echo "listen=0" >> /home/geekcash/.geekcash/geekcash.conf
+echo "rpcport=68900" >> /home/geekcash/.geekcash/geekcash.conf
+echo "listen=1" >> /home/geekcash/.geekcash/geekcash.conf
+echo "port=6890" >> /home/geekcash/.geekcash/geekcash.conf
 echo "externalip=$(hostname  -I | cut -f1 -d' '):6889" >> /home/geekcash/.geekcash/geekcash.conf
 echo "masternodeprivkey=$privkey" >> /home/geekcash/.geekcash/geekcash.conf
 sleep 5
@@ -98,8 +99,9 @@ echo "server=1" >> /home/geekcash2/.geekcash/geekcash.conf
 echo "daemon=1" >> /home/geekcash2/.geekcash/geekcash.conf
 echo "maxconnections=250" >> /home/geekcash2/.geekcash/geekcash.conf
 echo "masternode=1" >> /home/geekcash2/.geekcash/geekcash.conf
-echo "rpcport=6891" >> /home/geekcash2/.geekcash/geekcash.conf
-echo "listen=0" >> /home/geekcash2/.geekcash/geekcash.conf
+echo "rpcport=68910" >> /home/geekcash2/.geekcash/geekcash.conf
+echo "listen=1" >> /home/geekcash2/.geekcash/geekcash.conf
+echo "port=6891" >> /home/geekcash/.geekcash/geekcash.conf
 echo "externalip=$(hostname  -I | cut -f1 -d' '):6889" >> /home/geekcash2/.geekcash/geekcash.conf
 echo "masternodeprivkey=$privkey2" >> /home/geekcash2/.geekcash/geekcash.conf
 sleep 5 
@@ -113,8 +115,9 @@ echo "server=1" >> /home/geekcash3/.geekcash/geekcash.conf
 echo "daemon=1" >> /home/geekcash3/.geekcash/geekcash.conf
 echo "maxconnections=250" >> /home/geekcash3/.geekcash/geekcash.conf
 echo "masternode=1" >> /home/geekcash3/.geekcash/geekcash.conf
-echo "rpcport=6892" >> /home/geekcash3/.geekcash/geekcash.conf
-echo "listen=0" >> /home/geekcash3/.geekcash/geekcash.conf
+echo "rpcport=68920" >> /home/geekcash3/.geekcash/geekcash.conf
+echo "listen=1" >> /home/geekcash3/.geekcash/geekcash.conf
+echo "port=6892" >> /home/geekcash/.geekcash/geekcash.conf
 echo "externalip=$(hostname  -I | cut -f1 -d' '):6889" >> /home/geekcash3/.geekcash/geekcash.conf
 echo "masternodeprivkey=$privkey3" >> /home/geekcash3/.geekcash/geekcash.conf
 sleep 5 
@@ -128,8 +131,9 @@ echo "server=1" >> /home/geekcash4/.geekcash/geekcash.conf
 echo "daemon=1" >> /home/geekcash4/.geekcash/geekcash.conf
 echo "maxconnections=250" >> /home/geekcash4/.geekcash/geekcash.conf
 echo "masternode=1" >> /home/geekcash4/.geekcash/geekcash.conf
-echo "rpcport=6893" >> /home/geekcash4/.geekcash/geekcash.conf
-echo "listen=0" >> /home/geekcash4/.geekcash/geekcash.conf
+echo "rpcport=68930" >> /home/geekcash4/.geekcash/geekcash.conf
+echo "listen=1" >> /home/geekcash4/.geekcash/geekcash.conf
+echo "port=6893" >> /home/geekcash/.geekcash/geekcash.conf
 echo "externalip=$(hostname  -I | cut -f1 -d' '):6889" >> /home/geekcash4/.geekcash/geekcash.conf
 echo "masternodeprivkey=$privkey4" >> /home/geekcash4/.geekcash/geekcash.conf
 sleep 5 
@@ -160,4 +164,4 @@ echo -e ${GREEN}"Last node is fully synced. You fourth masternode is running!"${
 echo ""
 echo -e ${GREEN}"Congrats! Your GEEKCash Masternodes are now installed and started. Please wait from 10-20 minutes in order to give the masternode enough time to sync, then start the node from your wallet, Debug console option"${NC}
 echo "The END. You can close now the SSH terminal session";
-echo "If you found this helpful, please donate GEEK to GN2nt5horreKV27MRmgarsePzSR32B6jt8"
+echo -e ${RED}"If you found this helpful, please donate GEEK to GN2nt5horreKV27MRmgarsePzSR32B6jt8"
